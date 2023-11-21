@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="" content="width=device-width, initial-scale=1.0">
+    <title> figmaBanner </title>
+</head>
+<style>
+    * {margin: 0; padding: 0;}
+    div {
+        position: relative;
+        width: 1000px;
+        height: 700px;
+        background: #F5EEDC;
+    }
+    /* MERRY */
+    div .a1 {
+        position: absolute;
+        color: #2E5A1C;
+        font-size: 100px;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.50);
+        letter-spacing: -5px;
+        left: 50%;
+        top: 36%;
+        transform: translate(-50%, -50%);
+        z-index: 6;
+    }
+    /* CHRISTMAS */
+    div .a2 {
+        position: absolute;
+        color: #2E5A1C;
+        font-size: 120PX;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.50);
+        letter-spacing: -5px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+    }
+    /* 프레임 */
+    div .a3 img {
+        position: absolute;
+        width: 1000px;
+        height: 700px;
+        overflow: hidden;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+    /* 트리 */
+    div .a4 img {
+        position: absolute;
+        width: 450px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 70%;
+        z-index: 2;
+    }
+    /* 눈사람 */
+    div .a5 img {
+        position: absolute;
+        width: 220px;
+        right: 150px;
+        top: 200px;
+        z-index: 3;
+        animation: mymove 2s infinite;
+    }
+    @keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 200px;}
+  50%  {top: 100px;}
+  75%  {top: 200px;}
+  100% {top: 0px;}
+}
+    /* 눈꽃 */
+    div .a6 img {
+        position: absolute;
+        width: 100px;
+        right: 100px;
+        bottom: 300px;
+        z-index: 8;
+    }
+    /* 종장식 */
+    div .a7 img {
+        position: absolute;
+        width: 150px;
+        left: 180px;
+        top: 190px;
+        z-index: 4;
+    }
+    /* 눈꽃2 */
+    div .a8 img {
+        position: absolute;
+        width: 100px;
+        left: 110px;
+        top: 330px;
+        z-index: 7;
+    }
+</style>
+<body>
+    <div>
+    <!-- p.a$*8 -->
+    <p class="a1">MERRY</p>
+    <p class="a2">CHRISTMAS</p>
+    <p class="a3"><img src="./images/frame.png" alt="프레임"></p>
+    <p class="a4"><img src="./images/tree.png" alt="트리"></p>
+    <p class="a5"><img src="./images/snowman.png" alt="눈사람"></p>
+    <p class="a6"><img src="./images/snowflake.png" alt="눈꽃"></p>
+    <p class="a7">
+        <a href="https://blog.naver.com/seouldatepop/222949522477?&isInf=true" target="_blank">
+            <img src="./images/bell.png" alt="종장식">
+        </a>
+    </p>
+    <p class="a8"><img src="./images/snowflake2.png" alt="눈꽃2"></p>
+    </div>  
+</body>
+</html>
